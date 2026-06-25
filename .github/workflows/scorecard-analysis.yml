@@ -4,9 +4,11 @@ on:
     # Only the default branch is supported.
     branches:
     - main
-  schedule:
-    # Daily
-    - cron: '30 1 * * *'
+  # PAUSED daily schedule to save GitHub Actions minutes.
+  # Scorecard on push to main is sufficient for a fork.
+  # schedule:
+  #   # Daily
+  #   - cron: '30 1 * * *'
 
 # based on https://github.com/ossf/scorecard/blob/main/.github/workflows/scorecard-analysis.yml
 
